@@ -580,14 +580,14 @@
 	"/>
 <polygon fill="#AFBEC6" points="323.529,769.941 326.521,770.024 326.518,770.021 "/>
 <polygon fill="#AFBEC6" points="326.518,770.021 326.521,770.024 326.557,770.026 326.549,770.021 "/>
-<path class="territory-west oklahoma" fill="#AFBEC6" d="M327.779,779.261l-0.162-1.45v-0.246l-0.174,0.007l0.17-0.126l-0.082-0.568
+<path class="territory-west oklahoma" id="Oklahoma" fill="#AFBEC6" d="M327.779,779.261l-0.162-1.45v-0.246l-0.174,0.007l0.17-0.126l-0.082-0.568
 	c-0.033-0.195-0.059-0.345-0.068-0.438h-6.662l-5.939-0.32h-1.682v0.807l4.953,0.319l0.182,0.547l-0.16,3.818l0.424,0.282h0.813
 	l0.49,0.492l0.922,0.308l0.664-0.166l0.494,0.494l1.086,0.155l1.311-0.164l0.314,0.313l0.434-0.145l0.975-0.163l0.977-0.001h0.021
 	l1.014,0.58l-0.154-3.545L327.779,779.261z"/>
 <path fill="#AFBEC6" d="M327.463,776.438c0.01,0.094,0.035,0.243,0.068,0.438l-0.063-0.438H327.463z"/>
 <polygon fill="#AFBEC6" points="327.613,777.445 327.443,777.571 327.617,777.564 327.617,777.48 "/>
 <polygon fill="#AFBEC6" points="314.861,776.118 320.801,776.438 314.863,776.118 "/>
-<path class="territory-southeast texas" fill="#AFBEC6" d="M328.9,783.817h-0.637l0.002,0.062l-0.107-0.062l0,0h-0.055l-0.002-0.032l-1.066-0.609h-0.941l-0.787,0.158
+<path class="territory-southeast texas" id="Texas" fill="#AFBEC6" d="M328.9,783.817h-0.637l0.002,0.062l-0.107-0.062l0,0h-0.055l-0.002-0.032l-1.066-0.609h-0.941l-0.787,0.158
 	l-0.635,0.159l-0.043,0.015l-0.004-0.003l-0.324-0.325l-1.256,0.157l-1.16-0.166l-0.467-0.468l-0.621,0.155l-1.002-0.335
 	l-0.471-0.471h-0.795l-0.537-0.359l0.16-3.88l-0.139-0.416l-4.998-0.317l-0.643,9.79l-0.08-0.006l-6.652-0.475v0.362l3.041,3.039
 	l0.479,1.916l2.494,1.56l0.426-0.283l0.807-1.293l0.529-0.177l1.646,0.33l1.154,0.989l0.488,1.303l0.793,1.425l1.131,1.294
@@ -680,7 +680,7 @@
 <polygon fill="#AFBEC6" points="292.326,758.568 292.483,757.782 292.815,757.284 292.646,756.608 292.349,756.154 294.087,754.259
 	294.259,753.4 293.829,752.828 293.765,752.818 293.753,752.859 294.173,753.419 294.013,754.222 292.248,756.146 292.569,756.628
 	292.729,757.27 292.407,757.75 292.248,758.553 291.639,761.29 291.717,761.309 "/>
-<path class="territory-west washington" fill="#AFBEC6" d="M285.083,749.497l0.172,0.346l0.508,0.507l-0.176,0.528l-0.133,0.269l0.4,0.268h0.959h0.319l0.646,0.323
+<path class="territory-west washington" id="Washington" fill="#AFBEC6" d="M285.083,749.497l0.172,0.346l0.508,0.507l-0.176,0.528l-0.133,0.269l0.4,0.268h0.959h0.319l0.646,0.323
 	l1.588,0.159h1.598l0,0h0.334l1.778,0.646l0.568,0.094l1.554-6.059l-5.381-1.582l-2.281-0.912l0.143,0.848l-0.322,0.643l0.164,1.138
 	l-0.498,0.496l-0.337,1.015l-0.789-0.197l0.191-0.909l0.451-0.602l-0.293-0.586c-0.668-0.668-1.428-1.377-1.549-1.412
 	c-0.064,0.001-0.25,0.139-0.391,0.275v0.769l-0.16,1.612v1.288l-0.301,0.886l0.148,0.024l0.016-0.052L285.083,749.497z"/>
@@ -1355,6 +1355,8 @@ $(document).ready(function(){
             function(){
               $('.go').fadeIn(function(){$('.go').delay(400).fadeOut(
                 function(){
+                  $('.ready').css("visibility", "hidden");
+                  $('.set').css("visibility", "hidden");
                   $('.go').css("visibility", "hidden");
                   $('.wrapper').delay(200).fadeIn();
                   $('.usmock1').delay(200).fadeIn();
@@ -1364,6 +1366,7 @@ $(document).ready(function(){
           )})
         })
       });
+    })
 
     //countdown//
       setTimeout(function(){
@@ -1382,7 +1385,6 @@ $(document).ready(function(){
         function initializeClock(id, endtime) {
           var clock = document.getElementById(id);
           var secondsSpan = clock.querySelector('.seconds');
-
         function updateClock() {
           var t = getTimeRemaining(endtime);
           secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
@@ -1396,14 +1398,9 @@ $(document).ready(function(){
         var deadline = new Date(Date.parse(new Date()) + 60 * 1000);
           initializeClock('clockdiv', deadline);
 
-        }, 4000);
+        }, 5800);
     //
-      })
-
-
     //logic is something in the ballpark of "if user clicks div whose id matched id associated with the question, then alert correct and pull nect question, else alert please try again. Also, if user answers 3 question (they can't answer a 2nd unless they answer the first corecctly) then they earn a sticker"//
-
     });
-
 </script>
 </div>

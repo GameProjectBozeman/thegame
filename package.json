@@ -1,6 +1,7 @@
 {
   "name": "thegame",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +17,6 @@
     "url": "https://github.com/GameProjectBozeman/thegame/issues"
   },
   "homepage": "https://github.com/GameProjectBozeman/thegame#readme",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
