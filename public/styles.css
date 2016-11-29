@@ -366,15 +366,6 @@
         float: left;
         width: 100%;
     }
-    /*.region1, .region2, .region3 {
-        width: 75%;
-        height: auto;
-        position: relative;
-        margin-top: 14px;
-        margin-left: -12px;
-        display: none;
-    }*/
-
     .usmock1 {
         width: 80%;
         height: auto;
@@ -427,20 +418,10 @@
     .scoreWrapper {
         padding: 23px;
     }
-    /*.gemIcon {
-        background: url('http://icons.iconarchive.com/icons/aha-soft/jewelry/256/Gem-icon.png') center no-repeat;
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-        float: left;
-        margin: 0;
-        padding: 0;
-    }*/
-
-    .points, .points2, .points3 {
+    .points {
         width: auto;
         height: 20px;
-        padding-left: 5px;
+        padding-left: 11px;
         float: left;
         font-size: 16px;
         font-family: 'Happy Monkey', cursive;
@@ -448,6 +429,19 @@
         text-transform: uppercase;
         text-align: center;
     }
+    .time {
+        display: none;
+        width: auto;
+        padding: 5px;
+        float: left;
+        font-size: 13px;
+        font-family: 'Happy Monkey', cursive;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid white;
+        margin-bottom: 20px;
+      }
     .pin {
         background: url(https://cdn.goconqr.com/uploads/image_clipping/image/75550/flag_pin_angled_400_clr_9655.png) center no-repeat;
         background-size: cover;
@@ -507,7 +501,7 @@
         text-transform: uppercase;
         text-align: center;
     }
-    .screen2 .mainMenuBtn2  {
+    .screen2 .mainMenuBtn2 {
         background: rgba(0, 0, 0, .3);
         width: max-content;
         height: max-content;
