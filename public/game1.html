@@ -1385,7 +1385,6 @@ $(document).ready(function(){
         function initializeClock(id, endtime) {
           var clock = document.getElementById(id);
           var secondsSpan = clock.querySelector('.seconds');
-
         function updateClock() {
           var t = getTimeRemaining(endtime);
           secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
@@ -1401,10 +1400,7 @@ $(document).ready(function(){
 
         }, 5800);
     //
-
     //logic is something in the ballpark of "if user clicks div whose id matched id associated with the question, then alert correct and pull nect question, else alert please try again. Also, if user answers 3 question (they can't answer a 2nd unless they answer the first corecctly) then they earn a sticker"//
-
     });
-
 </script>
 </div>

@@ -67,7 +67,7 @@ $scope.question =
   function(){
       var state = $scope.states[Math.floor(Math.random()*8)].name;
       $('.questionBox').html("Click on the state of " + state);
-      $('polygon').off.on('click', function(e){
+      $('polygon').off().on('click', function(e){
         console.log(e.target.id);
         if(e.target.id == state){
           alert('Correct!');
