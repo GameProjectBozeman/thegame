@@ -35,4 +35,5 @@ angular.module("geoQzr",["ui.router"]).config(function($stateProvider, $urlRoute
     ;
 
   $urlRouterProvider.otherwise("/home");
+
 })
