@@ -520,3 +520,43 @@
     .screen2 #newState {
         padding: 3px 22px;
     }
+    .playerWrapper {
+      margin:auto;
+      display: flex;
+      align-content: space-around;
+    }
+    .playercard {
+        /*background: rgba(0, 0, 0, .3);*/
+        width: max-content;
+        height: max-content;
+        padding: 5px;
+        box-shadow: 4px 4px 100px #ccc;
+        float: left;
+        margin: 10px;
+    }
+
+    .playercard img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    #player1 {
+      background: rgba(200, 0, 0, .3);
+    }
+
+    #player2 {
+      background: rgba(0, 170, 0, .3);
+    }
+
+    #player3 {
+      background: rgba(0, 0, 170, .3);
+    }
+
+    #player4 {
+      background: rgba(170, 170, 0, .3);
+    }
+
+    #player5 {
+      background: rgba(0, 170, 170, .3);
+    }
