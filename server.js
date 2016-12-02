@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(express.static(__dirname + '/public'));
 
-app.get("/players", playerCtrl.read);
-app.post('/players', playerCtrl.create);
+// app.get("/players", playerCtrl.read);
+// app.post('/players', playerCtrl.create);
 // app.put('/players/:id', playerCtrl.update);
 // app.delete('/players/:id', playerCtrl.delete);
 

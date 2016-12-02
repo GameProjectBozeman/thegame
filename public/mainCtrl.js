@@ -423,12 +423,17 @@ mainServ.addPlayer(idString)
 //     }
 //
 // //player cookie
-// document.cookie = "player=(insert ID generator function here)"; expires= Wed, 01 Jan 2020 00:00:00 GMT;
+
+
+// document.cookie = "player=100; expires= Wed, 01 Jan 2020 00:00:00 GMT";
 // // path will default to where you are
 //
 //
 // //show cookies
-// document.getElementById("player1").textContent =  document.cookie;
-//
+
+
+// document.getElementById("player1").textContent = "HELLO";
+ // document.cookie;
+
 
 });
