@@ -3,7 +3,7 @@
         background-color: gray;
         background-size: cover;
         margin: 0 auto;
-        padding: 0px;
+        padding: 0;
         font-family: 'Happy Monkey', cursive;
         max-width: 768px;
         display: flex;
@@ -523,7 +523,11 @@
     .playerWrapper {
       margin:auto;
       display: flex;
-      align-content: space-around;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      width:100%;
+      flex-wrap: wrap;
     }
     .playercard {
         /*background: rgba(0, 0, 0, .3);*/

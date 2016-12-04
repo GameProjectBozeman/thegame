@@ -18,14 +18,55 @@
 
 <body ng-controller="mainCtrl">
     <div class="main-wrapper">
-          <div class="screen1">
-                <ui-view></ui-view>
-          </div>
+        <div class="screen1">
+            <!-- <ui-view></ui-view> -->
 
-          </br>
-          <!-- <div class="screen2">
-                <ui-view></ui-view>
-          </div> -->
+            <div class="players">
+              <div class="viewWrapper">
+                <div class="playerWrapper">
+  <div ng-init="getPlayers()" ng-model="playerObj" class="playercard" id="player1">
+    <span ng-hide="focused" ng-click="focused=true">
+    <img src="/assets/panda2.jpg"/>{{playerObj[0].name}}
+  </span>
+<!-- here's where the form goes -->
+
+
+<form ng-submit="changePlayer(playerObj)">
+  <h2>what's your name?</h2>
+  <input type="text" placeholder="name" ng-model="playerObj[0].name">
+  <h2>avatar?</h2>
+  <input type="text" placeholder="avatar"ng-model="playerObj.avatar">
+  <button type="submit" name="login">play!</button>
+</form>
+
+<!-- FORM DOESNT CHANGE, POSTMAN DOES -->
+<!-- done -->
+  </div>
+
+  <div ng-model="playerObj" class="playercard" id="player2"><img ng-src="{{playerObj[1].avatar}}"/>{{playerObj[1].name}}</div>
+  <div ng-model="playerObj" class="playercard" id="player3"><img ng-src="{{playerObj[2].avatar}}"/>{{playerObj[2].name}}</div>
+  <div ng-model="playerObj" class="playercard" id="player4"><img ng-src="{{playerObj[3].avatar}}"/>{{playerObj[3].name}}</div>
+  <div ng-model="playerObj" class="playercard" id="player5"><img ng-src="{{playerObj[4].avatar}}"/>{{playerObj[4].name}}</div>
+  <div ng-model="playerObj" class="playercard" id="player6"><img ng-src="{{playerObj[5].avatar}}"/>{{playerObj[5].name}}</div>
+                </div>
+                <div class="mainMenuBtn">
+                  <a ui-sref="home">Main Menu</a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        </br>
+
+
+
+        </div>
+
+
+
+
+
+
     </div>
 
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

@@ -375,65 +375,27 @@ $scope.question =
 $scope.getPlayers = function(){
   mainServ.getPlayers()
   .then(function(response){
-    $scope.allPlayers = response;//all players
-    // $scope.allPlayers.map(function(key){//to display for hall of fame like feature
-    //   return document.getElementById('highscore').insertAdjacentHTML("beforeend", "<div class='box'>" + key.html);
-    //})
+    $scope.playerObj = response;//all players
+      // console.log(playerObj);
   });
 };
 
-
-$scope.addPlayer = function(idString){//idString comes from cookie generator
-mainServ.addPlayer(idString)
+//
+$scope.addPlayer = function(playerObj){
+mainServ.addPlayer(playerObj)
 .then(function(response){
+  // $scope.playerObj.name = "";//clears input
   $scope.getPlayers();
 });
 };
 
+$scope.changePlayer = function(playerObj){
+  mainServ.changePlayer(playerObj)
+  .then(function(response){
+    console.log(response);
+    $scope.getPlayers();
+  });
+};
 
 
-
-
-
-
-
-// //GENERATE ID COOKIE
-// function guid() {
-//   function s4() {
-//     return Math.floor((1 + Math.random()) * 0x10000)
-//       .toString(16)
-//       .slice(1);
-//   }
-//   return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-//     s4() + '-' + s4() + s4() + s4();
-// }
-
-//idString = return... (only return 8 characters)
-
-//     $scope.playerGenerator =
-//     function(){
-//       return {
-//       // get player name input(case sensitive) +
-//       // get ip from API +
-//       // get idString
-//       //nest cookie here or nest function in player=""?
-//       // if username exists on device - ask for new username
-//       // if username exists on ip - append new ID
-//       //}
-//     }
-//
-// //player cookie
-
-
-// document.cookie = "player=100; expires= Wed, 01 Jan 2020 00:00:00 GMT";
-// // path will default to where you are
-//
-//
-// //show cookies
-
-
-// document.getElementById("player1").textContent = "HELLO";
- // document.cookie;
-
-
-});
+ });

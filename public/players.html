@@ -1,7 +1,8 @@
 <div class="players">
   <div class="viewWrapper">
-    <div>
-      <div class="playercard" id="player1"><img src="/assets/panda2.jpg"/>Player 1</div>
+    <div class="playerWrapper">
+      <div ng-model="playerObj"
+    class="playercard" id="player1"><img src="/assets/panda2.jpg"/>{playerObj.name[0]}</div>
       <div class="playercard" id="player2"><img src="/assets/bunny2.jpg"/>Player 2</div>
       <div class="playercard" id="player3"><img src="/assets/cat2.jpeg"/>Player 3</div>
       <div class="playercard" id="player4"><img src="/assets/dog2.png"/>Player 4</div>

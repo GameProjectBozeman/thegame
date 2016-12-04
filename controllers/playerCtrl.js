@@ -1,4 +1,5 @@
-var playerModel = require("./../models/playerModel.js");
+var mongoose = require('mongoose');
+var PlayerModel = require("./../models/playerModel.js");
 
 
 module.exports = {
@@ -24,17 +25,17 @@ module.exports = {
       }
     });
   },
-  // update: function(req, res){
-  //   GalaxiesModel.findByIdAndUpdate(req.params.id, req.body, function(err, result){
-  //     if(err){
-  //       res.send(err);
-  //     }else{
-  //       res.send(result);
-  //     }
-  //   });
-  // },
+  update: function(req, res){
+    PlayerModel.findByIdAndUpdate(req.params.id, req.body, function(err, result){
+      if(err){
+        res.send(err);
+      }else{
+        res.send(result);
+      }
+    });
+  },
   // delete: function(req, res){
-  //   GalaxiesModel.findByIdAndRemove(req.params.id, req.body, function(err, result){
+  //   PlayerModel.findByIdAndRemove(req.params.id, req.body, function(err, result){
   //     if(err){
   //       res.send(err);
   //     }else{
