@@ -8,7 +8,7 @@ $scope.states = [{
     },
     id: 1
 }, {
-    name: 'Deleware',
+    name: 'Delaware',
     questions: {
         capital: 'Dover',
         landmarks: 'State motto is Liberty and Independence'
