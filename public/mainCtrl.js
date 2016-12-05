@@ -358,7 +358,6 @@ $scope.states = [{
 }
 ];
 
-
 $scope.question =
   function (){
       var state = "";
@@ -424,7 +423,6 @@ $scope.countdown =
     }
     var deadline = new Date(Date.parse(new Date()) + 90 * 1000);
       initializeClock('clockdiv', deadline);
-
     }, 200);
   };
 
@@ -496,6 +494,31 @@ $scope.replayGame1 =
       });
     };
 
+//
+$scope.addPlayer = function(playerObj){
+  mainServ.addPlayer(playerObj)
+  .then(function(response){
+    // $scope.playerObj.name = "";//clears input
+    $scope.getPlayers();
+  });
+};
+
+$scope.changePlayer = function(playerObj){
+  console.log(playerObj)
+  mainServ.changePlayer(playerObj)
+  .then(function(response){
+    console.log(response);
+    $scope.getPlayers();
+  });
+};
+
+$scope.deletePlayer = function(playerObj){
+  mainServ.changePlayer(playerObj)
+  .then(function(response){
+    console.log(response);
+    $scope.getPlayers();
+  });
+};
 
 //player CRUD
 
@@ -552,4 +575,4 @@ $scope.replayGame1 =
 // document.getElementById("player1").textContent =  document.cookie;
 //
 
-});
+  });
