@@ -343,9 +343,10 @@ $scope.states = [{
     id: 48
 }
 ];
-// var explode = document.getElementById('explosion');
+
 //stop game after 60 seconds
 //add AK & HI
+
 $scope.question =
   function(){
       var state = "";
@@ -359,12 +360,6 @@ $scope.question =
       state = $scope.states[Math.floor(Math.random()*48)].name;
       $('.questionBox').html("Click on the state of " + state);
       $('polygon, path').off().on('click', function(e){
-        $(e.currentTarget).on('click', function(){
-            document.getElementsByClassName('explosion');
-        });
-        // $(e.currentTarget).on('click', function() {
-        //     return explosion;
-        // });
         console.log(e.target.id);
         if(e.target.id == state){
           console.log('Correct!');
@@ -374,4 +369,41 @@ $scope.question =
         };
       });
     };
+
+//player CRUD
+
+$scope.getPlayers = function(){
+  mainServ.getPlayers()
+  .then(function(response){
+    $scope.playerObj = response;//all players
+      // console.log(playerObj);
+  });
+};
+
+//
+$scope.addPlayer = function(playerObj){
+mainServ.addPlayer(playerObj)
+.then(function(response){
+  // $scope.playerObj.name = "";//clears input
+  $scope.getPlayers();
 });
+};
+
+$scope.changePlayer = function(playerObj){
+  console.log(playerObj)
+  mainServ.changePlayer(playerObj)
+  .then(function(response){
+    console.log(response);
+    $scope.getPlayers();
+  });
+};
+
+$scope.deletePlayer = function(playerObj){
+  mainServ.changePlayer(playerObj)
+  .then(function(response){
+    console.log(response);
+    $scope.getPlayers();
+  });
+};
+
+ });
