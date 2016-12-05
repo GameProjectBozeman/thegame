@@ -1,475 +1,475 @@
-    body {
-        color: #3c3b3b;
-        background-color: gray;
-        background-size: cover;
-        margin: 0 auto;
-        padding: 0px;
-        font-family: 'Happy Monkey', cursive;
-        max-width: 768px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: -200px;
-    }
-    a {
-        cursor: crosshair;
-    }
-    button:hover {
-        cursor: crosshair;
-    }
-    .logo {
-        background: url('http://vignette2.wikia.nocookie.net/angrybirds/images/e/e0/Angry-Birds-Logo.png/revision/latest?cb=20120603010222') no-repeat center;
-        background-size: contain;
-        height: 25vh;
-        width: auto;
-        margin: 0 auto;
-        position: relative;
-        z-index: 9999;
-        margin-top: -14px;
-    }
-    .nav {
-        height: 45px;
-        width: 100%;
-        background: transparent;
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav a {
-        position: relative;
-        display: inline-block;
-        width: auto;
-        font-size: 12px;
-        background-color: rgba(0, 0, 0, .2);
-        text-transform: uppercase;
-        border: 2px solid white;
-        text-decoration: none;
-        font-family: 'Arial', 'sans-serif';
-        color: white;
-        height: 45px;
-        font-size: 14px;
-        margin: 0px;
-        border: none;
-        float: right;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 15px;
-    }
-    .mainMenuBtn {
-        background: rgba(0, 0, 0, .3);
-        width: max-content;
-        height: max-content;
-        padding: 10px;
-        box-shadow: 4px 4px 100px #ccc;
-        float: left;
-        clear: both;
-    }
-    .mainMenuBtn2 {
-        background: rgba(0, 0, 0, .3);
-        width: max-content;
-        height: max-content;
-        padding: 10px;
-        box-shadow: 4px 4px 100px #ccc;
-        float: left;
-        clear: both;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 20px;
-        margin-left: 20px;
-    }
-    .mainMenuBtn a, .mainMenuBtn2 a {
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    #menuAnimate {}
-    .homepage {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-    }
-    .title {
-        float: left;
-        color: white;
-        text-transform: uppercase;
-        margin: 0;
-        margin-bottom: -25px;
-        font-size: 36px;
-        font-family: 'Bangers';
-        letter-spacing: 3px;
-    }
-    .games {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .learn {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .players {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .ready, .set, .go {
-        background: rgba(15, 40, 69, 0.65);
-        padding: 18px;
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        display: none;
-        position: absolute;
-        z-index: 99999;
-    }
-    .game1Wrapper {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .viewWrapper {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    .gameplayWrapper {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .gameChoices {
-        background: rgba(0, 0, 0, .25);
-        border-radius: 17px;
-        width: 100%;
-        padding: 5px;
-        height: 47%;
-        float: left;
-        margin-bottom: -15px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .game1 {
-        width: 110px;
-        height: 110px;
-        border-radius: 10px;
-        border: 1px solid white;
-        background: url('https://s-media-cache-ak0.pinimg.com/564x/f8/89/8e/f8898e79f66ec9545847915a2b306594.jpg') center no-repeat;
-        background-size: cover;
-    }
-    .game2 {
-        width: 110px;
-        height: 110px;
-        border-radius: 10px;
-        border: 1px solid white;
-        background: url('http://images.pocketgamer.co.uk/FCKEditorFiles//besticons-2012-bad.jpg') center no-repeat;
-        background-size: cover;
-    }
-    .game3 {
-        width: 110px;
-        height: 110px;
-        border-radius: 10px;
-        border: 1px solid white;
-        background: url('http://cdn.appstorm.net/iphone.appstorm.net/authors/marius/CutRopeTimeIcon.png') center no-repeat;
-        background-size: cover;
-    }
-    .game4 {
-        width: 110px;
-        height: 110px;
-        border-radius: 10px;
-        border: 1px solid white;
-        background: url('https://s-media-cache-ak0.pinimg.com/236x/bc/8c/00/bc8c007b984fb3b8e12b9962827872f9.jpg') center no-repeat;
-        background-size: cover;
-    }
-    .gameLock1 {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.65);
-        text-align: center;
-        display: none;
-    }
-    .gameLock2 {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.65);
-        text-align: center;
-    }
-    .gameLock3 {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.65);
-        text-align: center;
-    }
-    .gameLock4 {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.65);
-        text-align: center;
-    }
-    .fa-lock {
-        font-size: 35px;
-        color: #beb172;
-        float: left;
-        width: 100%;
-        margin: 20px 0 -5px 0;
-    }
-    .unlock {
-        color: white;
-        font-size: 14px;
-        float: left;
-        clear: both;
-        line-height: 1;
-        width: 100%;
-    }
-    .main-wrapper {
-        width: 100%;
-        height: auto;
-        min-height: 73vh;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
-        margin-top: 175px;
-        padding: 40px;
-    }
-    .screen1 {
-        background-color: whitesmoke;
-        width: 640px;
-        height: 310px;
-        margin: 0;
-        overflow: hidden;
-    }
-    .screen2 {
-        background-color: whitesmoke;
-        width: 310px;
-        height: 640px;
-        margin: 0;
-        overflow: hidden;
-    }
-    .page-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: space-between;
-        justify-content: center;
-        width: 100%;
-        padding: 0 10px;
-        margin-top: 75px;
-    }
-    .fa-home {
-        margin-left: 6px;
-        margin-top: -10px;
-        font-size: 26px;
-        color: #CEE9F2;
-        background: rgba(15, 27, 69, .2);
-        border-radius: 3px;
-        padding: 2px;
-        height: max-content;
-    }
-    #landingHomeIcon {
-        position: absolute;
-        top: 60px;
-        left: 30px;
-        z-index: 99999;
-        background: rgba(244, 255, 255, .3);
-    }
-    .instructions {
-        display: flex;
-        background-size: cover;
-        border-radius: 5px;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: -10px;
-    }
-    .wrapper {
-        background: rgba(255, 255, 255, .85);
-        background-size: cover;
-        border-radius: 5px;
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        display: none;
-    }
-    .landingMap {
-        background: url('assets/usamck.png') center center no-repeat;
-        background-size: contain;
-        height: 100%;
-        width: 100%;
-        margin-left: -35px;
-        margin-right: 8px;
-        margin-top: 0px;
-        position: absolute;
-    }
-    .landingModal {
-        background: rgba(15, 40, 69, 0.65);
-        padding: 18px;
-        margin: 12px;
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .landingModal button {
-        margin-top: 10px;
-        border: none;
-        color: white;
-        background-color: rgba(0, 255, 0, .6);
-        text-transform: uppercase;
-        height: 30px;
-        padding: 5px 10px;
-        font-size: 14px;
-        float: left;
-        clear: both;
-    }
-    .landingModal h3, .landingModal h4 {
-        float: left;
-        width: 100%;
-    }
-    .usmock1 {
-        width: 80%;
-        height: auto;
-        position: relative;
-        margin-top: -38px;
-        margin-left: -18px;
-        display: none;
-    }
-    .sidebar {
-        background: rgb(40, 98, 127);
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 23%;
-        padding: 6px;
-        text-align: center;
-    }
-    .questionBox {
-        width: 100%;
-        height: max-content;
-        background: rgba(15, 27, 69, .25);
-        border-radius: 5px;
-        box-sizing: border-box;
-        border: 5px solid white;
-        box-shadow: 5px 5px 20px #fff;
-        padding: 18px 14px;
-        color: white;
-        text-transform: uppercase;
-        font-size: 15px;
-        text-align: center;
-    }
-    .questionBox select {
-        margin-top: 5px;
-    }
-    .timer {
-        width: 100%;
-        height: max-content;
-        box-sizing: border-box;
-        background: rgba(15, 27, 69, .25);
-        border-radius: 5px;
-        border: 5px solid white;
-        box-shadow: 4px 4px 20px #fff;
-        padding: 5px;
-        font-family: 'Orbitron', sans-serif;
-        color: lime;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .scoreWrapper {
-        padding: 23px;
-    }
-    .points {
-        width: auto;
-        height: 20px;
-        padding-left: 11px;
-        float: left;
-        font-size: 16px;
-        font-family: 'Happy Monkey', cursive;
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .time {
-        display: none;
-        width: auto;
-        padding: 5px;
-        float: left;
-        font-size: 13px;
-        font-family: 'Happy Monkey', cursive;
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        border: 2px solid white;
-        margin-bottom: 20px;
-      }
-    .pin {
-        background: url(https://cdn.goconqr.com/uploads/image_clipping/image/75550/flag_pin_angled_400_clr_9655.png) center no-repeat;
-        background-size: cover;
-        position: absolute;
-        z-index: 999999;
-        left: 230px;
-        top: 55px;
-        width: 30px;
-        height: 30px;
-        margin: 0;
-        padding: 0;
-        display: none;
-    }
-    /*SVG w hover*/
+body {
+    color: #3c3b3b;
+    background-color: gray;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Happy Monkey', cursive;
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+a {
+    cursor: crosshair;
+}
+button:hover {
+    cursor: crosshair;
+}
+.logo {
+    background: url('http://vignette2.wikia.nocookie.net/angrybirds/images/e/e0/Angry-Birds-Logo.png/revision/latest?cb=20120603010222') no-repeat center;
+    background-size: contain;
+    height: 25vh;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999;
+    margin-top: -14px;
+}
+.nav {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav a {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    border: 2px solid white;
+    text-decoration: none;
+    font-family: 'Arial', 'sans-serif';
+    color: white;
+    height: 45px;
+    font-size: 14px;
+    margin: 0px;
+    border: none;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+.mainMenuBtn {
+    background: rgba(0, 0, 0, .3);
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 4px 4px 100px #ccc;
+    float: left;
+    clear: both;
+}
+.mainMenuBtn2 {
+    background: rgba(0, 0, 0, .3);
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 4px 4px 100px #ccc;
+    float: left;
+    clear: both;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 20px;
+}
+.mainMenuBtn a, .mainMenuBtn2 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#menuAnimate {}
+.homepage {
+    background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.title {
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: -25px;
+    font-size: 36px;
+    font-family: 'Bangers';
+    letter-spacing: 3px;
+}
+.games {
+    background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn {
+    background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.players {
+    background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ready, .set, .go {
+    background: rgba(15, 40, 69, 0.65);
+    padding: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    z-index: 99999;
+}
+.game1Wrapper {
+    background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.gameplayWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gameChoices {
+    background: rgba(0, 0, 0, .25);
+    border-radius: 17px;
+    width: 100%;
+    padding: 5px;
+    height: 47%;
+    float: left;
+    margin-bottom: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.game1 {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: url('https://s-media-cache-ak0.pinimg.com/564x/f8/89/8e/f8898e79f66ec9545847915a2b306594.jpg') center no-repeat;
+    background-size: cover;
+}
+.game2 {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: url('http://images.pocketgamer.co.uk/FCKEditorFiles//besticons-2012-bad.jpg') center no-repeat;
+    background-size: cover;
+}
+.game3 {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: url('http://cdn.appstorm.net/iphone.appstorm.net/authors/marius/CutRopeTimeIcon.png') center no-repeat;
+    background-size: cover;
+}
+.game4 {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: url('https://s-media-cache-ak0.pinimg.com/236x/bc/8c/00/bc8c007b984fb3b8e12b9962827872f9.jpg') center no-repeat;
+    background-size: cover;
+}
+.gameLock1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    display: none;
+}
+.gameLock2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
+.gameLock3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
+.gameLock4 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
+.fa-lock {
+    font-size: 35px;
+    color: #beb172;
+    float: left;
+    width: 100%;
+    margin: 20px 0 -5px 0;
+}
+.unlock {
+    color: white;
+    font-size: 14px;
+    float: left;
+    clear: both;
+    line-height: 1;
+    width: 100%;
+}
+.main-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 73vh;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 175px;
+    padding: 40px;
+}
+.screen1 {
+    background-color: whitesmoke;
+    width: 640px;
+    height: 310px;
+    margin: 0;
+    overflow: hidden;
+}
+.screen2 {
+    background-color: whitesmoke;
+    width: 310px;
+    height: 640px;
+    margin: 0;
+    overflow: hidden;
+}
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 75px;
+}
+.fa-home {
+    margin-left: 6px;
+    margin-top: -10px;
+    font-size: 26px;
+    color: #CEE9F2;
+    background: rgba(15, 27, 69, .2);
+    border-radius: 3px;
+    padding: 2px;
+    height: max-content;
+}
+#landingHomeIcon {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    z-index: 99999;
+    background: rgba(244, 255, 255, .3);
+}
+.instructions {
+    display: flex;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+.wrapper {
+    background: rgba(255, 255, 255, .85);
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.landingMap {
+    background: url('assets/usamck.png') center center no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    margin-left: -35px;
+    margin-right: 8px;
+    margin-top: 0px;
+    position: absolute;
+}
+.landingModal {
+    background: rgba(15, 40, 69, 0.65);
+    padding: 18px;
+    margin: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.landingModal button {
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 255, 0, .6);
+    text-transform: uppercase;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    float: left;
+    clear: both;
+}
+.landingModal h3, .landingModal h4 {
+    float: left;
+    width: 100%;
+}
+.usmock1 {
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin-top: -38px;
+    margin-left: -18px;
+    display: none;
+}
+.sidebar {
+    background: rgb(40, 98, 127);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 23%;
+    padding: 6px;
+    text-align: center;
+}
+.questionBox {
+    width: 100%;
+    height: max-content;
+    background: rgba(15, 27, 69, .25);
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    box-shadow: 5px 5px 20px #fff;
+    padding: 18px 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+}
+.questionBox select {
+    margin-top: 5px;
+}
+.timer {
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    background: rgba(15, 27, 69, .25);
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 4px 4px 20px #fff;
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+    color: lime;
+    text-transform: uppercase;
+    text-align: center;
+}
+.scoreWrapper {
+    padding: 23px;
+}
+.points {
+    width: auto;
+    height: 20px;
+    padding-left: 11px;
+    float: left;
+    font-size: 16px;
+    font-family: 'Happy Monkey', cursive;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.time {
+    display: none;
+    width: auto;
+    padding: 5px;
+    float: left;
+    font-size: 13px;
+    font-family: 'Happy Monkey', cursive;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid white;
+    margin-bottom: 20px;
+  }
+.pin {
+    background: url(https://cdn.goconqr.com/uploads/image_clipping/image/75550/flag_pin_angled_400_clr_9655.png) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 999999;
+    left: 230px;
+    top: 55px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+/*SVG w hover*/
 
-    .territory-west:hover {
-        fill: #B1DBA6;
-    }
-    .territory-northeast:hover {
-        fill: #79909B;
-    }
-    .territory-ksmo:hover {
-        fill: #F7CC7E;
-    }
-    .territory-southeast:hover {
-        fill: #EFA497;
-    }
-    /*alternative to media queries*/
+.territory-west:hover {
+    fill: #B1DBA6;
+}
+.territory-northeast:hover {
+    fill: #79909B;
+}
+.territory-ksmo:hover {
+    fill: #F7CC7E;
+}
+.territory-southeast:hover {
+    fill: #EFA497;
+}
+/*alternative to media queries*/
 
     .screen2 .sidebar {
         background: rgb(40, 98, 127);
@@ -560,3 +560,90 @@
     #player5 {
       background: rgba(0, 170, 170, .3);
     }
+
+.screen2 .sidebar {
+    background: rgb(40, 98, 127);
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 57%;
+    width: 96%;
+    padding: 6px;
+    text-align: center;
+}
+.screen2 .usmock1 {
+    width: 109%;
+    margin-bottom: -70px;
+    margin-left: -17px;
+    margin-top: -5px;
+}
+.screen2 .timer {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    background: rgba(15, 27, 69, .25);
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 4px 4px 20px #fff;
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+    color: lime;
+    text-transform: uppercase;
+    text-align: center;
+}
+.screen2 .mainMenuBtn2 {
+    background: rgba(0, 0, 0, .3);
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 4px 4px 100px #ccc;
+    float: left;
+    clear: both;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 100px;
+}
+.screen2 .scoreWrapper {
+    padding: 30px 0 0 100px;
+}
+.screen2 #newState {
+    padding: 3px 22px;
+}
+.playerWrapper {
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width:100%;
+  flex-wrap: wrap;
+}
+.playercard {
+    /*background: rgba(0, 0, 0, .3);*/
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    box-shadow: 4px 4px 100px #ccc;
+    float: left;
+    margin: 10px;
+}
+
+.playercard img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+
+.flexIcon {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+li {
+    text-decoration: none;
+}

@@ -1,0 +1,25 @@
+#canvas {
+  position: absolute;
+  top: 15px;
+  left: -48px;
+  right: 0;
+  margin: auto;
+  width: 640px;
+  height: 310px;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  position: absolute;
+  top: 15px;
+  left: -48px;
+  right: 0;
+  margin: auto;
+  width: 640px;
+  height: 310px;
+  pointer-events: none;
+}

@@ -10,14 +10,32 @@ angular.module("geoQzr").service("mainServ", function($http){
       return response.data;
     });
   };
-  this.addPlayer = function(page){
+  this.addPlayer = function(playerObj){
     return $http({
       method: "POST",
       url: "/players",
-      data: page
+      data: playerObj
     }).then(function(response){
       return response;
     });
   };
 
-  });
+  this.changePlayer = function(playerObj){
+    console.log(playerObj)
+    return $http({
+      method: "PUT",
+      url: "/players/" + playerObj._id,
+      data: playerObj
+    }).then(function(response){
+      return response;
+    });
+  };
+  this.deletePlayer = function(playerObj){
+    return $http({
+      method: "DELETE",
+      url: "/players/" + playerObj._id
+    }).then(function(response){
+      return response;
+    });
+  };
+   });
