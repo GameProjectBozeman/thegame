@@ -1,13 +1,10 @@
 <div class="players">
   <div class="viewWrapper">
-    <div  class="playerWrapper user" ng-repeat="player in allPlayers| filter: filterer" >
+    <div  class="playerWrapper1" ng-repeat="player in allPlayers| filter: filterer" >
       <a ng-click="getPlayer(player._id)" ui-sref="createPlayer({createPlayerId: player._id})">
       <div class="playercard" id="player1">
         <img id="avatar" ng-src="{{player.avatar}}"/>{{player.name}}</a>
       </div>
-    </div>
-    <div class="mainMenuBtn">
-      <a ui-sref="home">Main Menu</a>
     </div>
   </div>
 </div>

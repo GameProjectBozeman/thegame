@@ -367,6 +367,7 @@ $scope.question =
         $('.questionBox').html("Click on the state of " + state);
         $('.points').html('Score: ' + score);
         score++;
+        noRepeat();
       };
       state = $scope.states[Math.floor(Math.random()*48)].name;
       $('.questionBox').html("Click on the state of " + state);
@@ -544,6 +545,7 @@ $scope.getPlayer = function(id) {
     }
 };
 
+
 // $scope.addPlayer = function(idString){//idString comes from cookie generator
 // mainServ.addPlayer(idString)
 // .then(function(response){
@@ -585,5 +587,22 @@ $scope.getPlayer = function(id) {
 // //show cookies
 // document.getElementById("player1").textContent =  document.cookie;
 //
+
+var fiftyStates = [];
+
+var allStates = function(){
+    for(var i = 0; i <= fiftyStates.length; i++){
+        fiftyStates.push($scope.states.name[i]);
+    }
+};
+
+var noRepeat = function(){
+    for(var j; j <= fiftyStates.length; j++){
+    if(state == fiftyStates[j]){
+        setState();
+        fiftyStates.pop[i];
+    }
+    }
+};
 
   });
