@@ -30,12 +30,23 @@ angular.module("geoQzr").service("mainServ", function($http){
       return response;
     });
   };
-  this.deletePlayer = function(playerObj){
-    return $http({
-      method: "DELETE",
-      url: "/players/" + playerObj._id
-    }).then(function(response){
-      return response;
-    });
-  };
+
+var storedPlayer;
+
+ function set(player){
+   storedPlayer = player;
+ };
+ function get(player){
+   return storedPlayer;
+ };
+
+
+  // this.deletePlayer = function(playerObj){
+  //   return $http({
+  //     method: "DELETE",
+  //     url: "/players/" + playerObj._id
+  //   }).then(function(response){
+  //     return response;
+  //   });
+  // };
    });

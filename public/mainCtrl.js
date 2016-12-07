@@ -495,6 +495,14 @@ $scope.replayGame1 =
     };
 
 //
+
+$scope.getPlayers = function(){
+  mainServ.getPlayers()
+  .then(function(response){
+    $scope.allPlayers = response;//all players
+  });
+};
+
 $scope.addPlayer = function(playerObj){
   mainServ.addPlayer(playerObj)
   .then(function(response){
@@ -512,26 +520,29 @@ $scope.changePlayer = function(playerObj){
   });
 };
 
-$scope.deletePlayer = function(playerObj){
-  mainServ.changePlayer(playerObj)
-  .then(function(response){
-    console.log(response);
-    $scope.getPlayers();
-  });
-};
-
-//player CRUD
-
-// $scope.getPlayers = function(){
-//   mainServ.getPlayers()
+// $scope.deletePlayer = function(playerObj){
+//   mainServ.changePlayer(playerObj)
 //   .then(function(response){
-//     $scope.allPlayers = response;//all players
-    // $scope.allPlayers.map(function(key){//to display for hall of fame like feature
-    //   return document.getElementById('highscore').insertAdjacentHTML("beforeend", "<div class='box'>" + key.html);
-    //})
+//     console.log(response);
+//     $scope.getPlayers();
 //   });
 // };
 
+//player CRUD
+
+$scope.$on('$stateChangeSuccess', function(){
+   $scope.getPlayers();
+});
+
+
+$scope.getPlayer = function(id) {
+    console.log(id)
+    for (var i = 0; i < $scope.allPlayers.length; i++) {
+        if (id == $scope.allPlayers[i]._id) {
+            $scope.onePlayer = $scope.allPlayers[i];
+        }
+    }
+};
 
 // $scope.addPlayer = function(idString){//idString comes from cookie generator
 // mainServ.addPlayer(idString)

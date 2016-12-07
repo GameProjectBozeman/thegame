@@ -12,6 +12,14 @@ angular.module("geoQzr",["ui.router"]).config(function($stateProvider, $urlRoute
       url: "/players",
       templateUrl: "players.html"
     })
+    .state("createPlayer", {
+      url: "/createPlayer",
+      templateUrl: "createPlayer.html"
+    })
+    .state("createAvatar", {
+      url: "/createAvatar",
+      templateUrl: "createAvatar.html"
+    })
     .state("game1", {
       url: "/game1",
       templateUrl: "game1.html"

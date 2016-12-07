@@ -19,14 +19,14 @@
         cursor: crosshair;
     }
     .logo {
-        background: url('http://vignette2.wikia.nocookie.net/angrybirds/images/e/e0/Angry-Birds-Logo.png/revision/latest?cb=20120603010222') no-repeat center;
+        background: url('/assets/GeoQzr Final.png') no-repeat center;
         background-size: contain;
-        height: 25vh;
+        height: 35vh;
         width: auto;
         margin: 0 auto;
         position: relative;
         z-index: 9999;
-        margin-top: -14px;
+        margin-top: 14px;
     }
     .nav {
         height: 45px;
@@ -97,7 +97,7 @@
         text-transform: uppercase;
     }
     .homepage {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('/assets/US with Avatars.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -113,7 +113,7 @@
         letter-spacing: 3px;
     }
     .games {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('/assets/US with Avatars.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -122,7 +122,7 @@
         align-items: center;
     }
     .learn {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('/assets/US with Avatars.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -131,7 +131,7 @@
         align-items: center;
     }
     .players {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('/assets/US with Avatars.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -155,7 +155,7 @@
         z-index: 99999;
     }
     .game1Wrapper {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('/assets/sbbk0.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;

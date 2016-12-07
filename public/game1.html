@@ -10,8 +10,9 @@
         GO!
       </div>
     <div class="instructions">
-        <div class="landingModal">
-              <h3>Welcome to <strong>Game 1</strong>!</h3><br/>
+        <div class="landingModal playercard">
+              <h3>Welcome to <strong>Game 1,  {{onePlayer.name}}</strong>!</h3>
+							<img src="{{onePlayer.avatar}}" /><br/>
               <h4>Goal: Correctly locate as many states as you can in 90 seconds!</h4>
               <button id="launch" ng-click="playGame1()">Play</button>
         </div>
