@@ -6,14 +6,16 @@ $scope.states = [{
         capital: 'Phoenix',
         landmarks: 'This state is home to the Grand Canyon'
     },
-    id: 1
+    id: 1,
+    region: 'w'
 }, {
     name: 'Delaware',
     questions: {
         capital: 'Dover',
         landmarks: 'State motto is Liberty and Independence'
     },
-    id: 2
+    id: 2,
+    region: 'ne'
 },
 {
     name: 'Iowa',
@@ -21,7 +23,8 @@ $scope.states = [{
         capital: 'Des Moines',
         landmarks: 'This state is known as The Hawkeye State'
     },
-    id: 3
+    id: 3,
+    region: 'mw'
 },
 {
     name: 'Ohio',
@@ -29,7 +32,8 @@ $scope.states = [{
         capital: 'Columbus',
         landmarks: 'Columbus Zoo and Aquarium'
     },
-    id: 4
+    id: 4,
+    region: 'mw'
 },
 {
     name: 'Kansas',
@@ -37,7 +41,8 @@ $scope.states = [{
         capital: 'Topeka',
         landmarks: 'This state is home to the Museum of World Treasures'
     },
-    id: 5
+    id: 5,
+    region: 'mw'
 },
 {
     name: 'California',
@@ -45,7 +50,8 @@ $scope.states = [{
         capital: 'Sacremento',
         landmarks: 'This state is home to Disneyland'
     },
-    id: 6
+    id: 6,
+    region: 'w'
 },
 {
     name: 'Washington',
@@ -53,308 +59,352 @@ $scope.states = [{
         capital: 'Olympia',
         landmarks: 'Home to the Space Needle'
     },
-    id: 7
+    id: 7,
+    region: 'w'
 },{
     name: 'Montana',
     questions: {
         capital: 'Helena',
         landmarks: 'This state is home to Yellostone National Park'
     },
-    id: 8
+    id: 8,
+    region: 'w'
 } ,{
     name: 'Colorado',
     questions: {
         capital: 'Denver',
         landmarks: 'Home to Rocky Mountain National Park'
     },
-    id: 9
+    id: 9,
+    region: 'w'
 } ,{
     name: 'Utah',
     questions: {
         capital: 'Salt Lake City',
         landmarks: 'Bryce Canyon National Park'
     },
-    id: 10
+    id: 10,
+    region: 'w'
 } ,{
     name: 'New Jersey',
     questions: {
         capital: 'Trenton',
         landmarks: 'Jersey Shore'
     },
-    id: 11
+    id: 11,
+    region: 'ne'
 } ,{
     name: 'New York',
     questions: {
         capital: 'Albany',
         landmarks: 'Statue of Liberty'
     },
-    id: 12
+    id: 12,
+    region: 'ne'
 } ,{
     name: 'New Hampshire',
     questions: {
         capital: 'Concord',
         landmarks: 'Flume Gorge'
     },
-    id: 13
+    id: 13,
+    region: 'ne'
 } ,{
     name: 'Connecticut',
     questions: {
         capital: 'Hartford',
         landmarks: 'Home of the Mark Twain House and Museum'
     },
-    id: 14
+    id: 14,
+    region: 'ne'
 } ,{
     name: 'North Dakota',
     questions: {
         capital: 'Bismark',
         landmarks: 'Fort Mandan'
     },
-    id: 15
+    id: 15,
+    region: 'mw'
 } ,{
     name: 'South Dakota',
     questions: {
         capital: 'Pierre',
         landmarks: 'Mount Rushmore National Memorial'
     },
-    id: 16
+    id: 16,
+    region: 'mw'
 } ,{
     name: 'Indiana',
     questions: {
         capital: 'Indianapolis',
         landmarks: 'This state is home to The Indianapolis 500'
     },
-    id: 17
+    id: 17,
+    region: 'mw'
 } ,{
     name: 'Illinois',
     questions: {
         capital: 'Springfield',
         landmarks: 'This state is home to the Wrigley Field'
     },
-    id: 18
+    id: 18,
+    region: 'mw'
 } ,{
     name: 'Missouri',
     questions: {
         capital: 'Jefferson City',
         landmarks: 'This state is home to the Gateway Arch'
     },
-    id: 19
+    id: 19,
+    region: 'mw'
 } ,{
     name: 'Louisianna',
     questions: {
         capital: 'Baton Rouge',
         landmarks: 'This state is home to the French Quarter'
     },
-    id: 20
+    id: 20,
+    region: 'se'
 } ,{
     name: 'Oregon',
     questions: {
         capital: 'Salem',
         landmarks: 'Crater Lake National Park'
     },
-    id: 21
+    id: 21,
+    region: 'w'
 } ,{
     name: 'Idaho',
     questions: {
         capital: 'Boise',
         landmarks: 'This state is home to the Frank Church Wilderness'
     },
-    id: 22
+    id: 22,
+    region: 'w'
 } ,{
     name: 'New Mexico',
     questions: {
         capital: 'Sante Fe',
         landmarks: 'Carlsbad'
     },
-    id: 23
+    id: 23,
+    region: 'w'
 } ,{
     name: 'Texas',
     questions: {
         capital: 'Austin',
         landmarks: 'Alamo'
     },
-    id: 24
+    id: 24,
+    region: 'w'
 } ,{
     name: 'Alabama',
     questions: {
         capital: 'Helena',
         landmarks: 'Home to the World War II Battleship, USS Alabama'
     },
-    id: 25
+    id: 25,
+    region: 'se'
 } ,{
     name: 'Georgia',
     questions: {
         capital: 'Atlanta',
         landmarks: 'Home of Centennial Olympic Park'
     },
-    id: 26
+    id: 26,
+    region: 'se'
 } ,{
     name: 'Virginia',
     questions: {
         capital: 'Richmond',
         landmarks: 'Home to Busch Gardens'
     },
-    id: 27
+    id: 27,
+    region: 'se'
 } ,{
     name: 'North Carolina',
     questions: {
         capital: 'Raleigh',
         landmarks: 'Great Smokey Mountains National Park'
     },
-    id: 28
+    id: 28,
+    region: 'se'
 } ,{
     name: 'South Carolina',
     questions: {
         capital: 'Columbia',
         landmarks: 'Huntington Beach State Park'
     },
-    id: 29
+    id: 29,
+    region: 'se'
 } ,{
     name: 'Tennessee',
     questions: {
         capital: 'Nashville',
         landmarks: 'Dollywood'
     },
-    id: 30
+    id: 30,
+    region: 'se'
 } ,{
     name: 'Kentucky',
     questions: {
         capital: 'Frankfort',
         landmarks: 'This state is home to the Kentucky Derby'
     },
-    id: 31
+    id: 31,
+    region: 'se'
 } ,{
     name: 'Arkansas',
     questions: {
         capital: 'Little Rock',
         landmarks: 'Home of Hotsprings National Park'
     },
-    id: 32
+    id: 32,
+    region: 'se'
 } ,{
     name: 'Mississippi',
     questions: {
         capital: 'Jackson',
         landmarks: 'This state is know as the birthplace of Elvis'
     },
-    id: 33
+    id: 33,
+    region: 'se'
 } ,{
     name: 'Oklahoma',
     questions: {
         capital: 'Oklahoma City',
         landmarks: 'National Cowboy and Western Heritage Museum'
     },
-    id: 34
+    id: 34,
+    region: 'w'
 } ,{
     name: 'Nebraska',
     questions: {
         capital: 'Lincoln',
         landmarks: 'Agate Fossil Beds National Monument'
     },
-    id: 35
+    id: 35,
+    region: 'mw'
 } ,{
     name: 'Wisconsin',
     questions: {
         capital: 'Madison',
         landmarks: 'Wisconsin Dells'
     },
-    id: 36
+    id: 36,
+    region: 'mw'
 } ,{
     name: 'Minnesota',
     questions: {
         capital: 'St. Paul',
         landmarks: 'This state is home to the Mall of America'
     },
-    id: 37
+    id: 37,
+    region: 'mw'
 } ,{
     name: 'Maine',
     questions: {
         capital: 'Augusta',
         landmarks: 'This state is home to Acadia National Park'
     },
-    id: 38
+    id: 38,
+    region: 'ne'
 } ,{
     name: 'Pennsylvania',
     questions: {
         capital: 'Harrisburg',
         landmarks: 'National Civil War Museum'
     },
-    id: 39
+    id: 39,
+    region: 'ne'
 } ,{
     name: 'West Virginia',
     questions: {
         capital: 'Charleston',
         landmarks: 'Harpers Ferry National Historical Park'
     },
-    id: 40
+    id: 40,
+    region: 'se'
 } ,{
     name: 'Maryland',
     questions: {
         capital: 'Annapolis',
         landmarks: 'This state is home to the National Aquarium'
     },
-    id: 41
+    id: 41,
+    region: 'ne'
 } ,{
     name: 'Massachusetts',
     questions: {
         capital: 'Boston',
         landmarks: 'This state is home to Fenway Park'
     },
-    id: 42
+    id: 42,
+    region: 'ne'
 } ,{
     name: 'Vermont',
     questions: {
         capital: 'Montpelier',
         landmarks: 'The Lincoln Family Home'
     },
-    id: 43
+    id: 43,
+    region: 'ne'
 } ,{
     name: 'Rhode Island',
     questions: {
         capital: 'Providence',
         landmarks: 'Block Island Lighthouse'
     },
-    id: 44
+    id: 44,
+    region: 'ne'
 } ,{
     name: 'Michigan',
     questions: {
         capital: 'Lansing',
         landmarks: 'This state is home to The Great Lakes'
     },
-    id: 45
+    id: 45,
+    region: 'mw'
 } ,{
     name: 'Nevada',
     questions: {
         capital: 'Carson City',
         landmarks: 'Las Vegas'
     },
-    id: 46
+    id: 46,
+    region: 'w'
 } ,{
     name: 'Wyoming',
     questions: {
         capital: 'Cheyenne',
         landmarks: 'Home to Yellowstone National Park'
     },
-    id: 47
+    id: 47,
+    region: 'w'
 } ,{
     name: 'Florida',
     questions: {
         capital: 'Tallahassee',
         landmarks: 'This state is home to the Everglades and Disneyworld'
     },
-    id: 48
+    id: 48,
+    region: 'se'
 },{
     name: 'Hawaii',
     questions: {
         capital: 'Honolulu',
         landmarks: 'This state is home to Pearl Harbor'
     },
-    id: 49
+    id: 49,
+    region: 'out'
 },{
     name: 'Alaska',
     questions: {
         capital: 'Juneau',
         landmarks: 'This state is home to Denali National Park'
     },
-    id: 50
+    id: 50,
+    region: 'out'
 }
 ];
 
@@ -363,11 +413,33 @@ $scope.question =
       var state = "";
       score = 1;
       function setState(){
-        state = $scope.states[Math.floor(Math.random()*48)].name;
+        stateObj = $scope.states[Math.floor(Math.random()*48)];
+        state = stateObj.name;
+        if (stateObj.region == 'ne'){
+          $('#Layer_1').animate({
+            'width': '220%',
+            'height': 'auto',
+            'margin-left': '-720px',
+            'margin-top': '-80px'
+      }, "slow");
+    }else {
+      $('#Layer_1').animate({
+        'width': '100%',
+        'height': 'auto',
+        'margin-left': '0',
+        'margin-top': '0px'
+      }, "slow");
+    }
+
+        console.log("waah");
+
+
+
         $('.questionBox').html("Click on the state of " + state);
         $('.points').html('Score: ' + score);
         score++;
       };
+
       state = $scope.states[Math.floor(Math.random()*48)].name;
       $('.questionBox').html("Click on the state of " + state);
       $('polygon, path').off().on('click', function(e){
@@ -520,59 +592,6 @@ $scope.deletePlayer = function(playerObj){
   });
 };
 
-//player CRUD
 
-// $scope.getPlayers = function(){
-//   mainServ.getPlayers()
-//   .then(function(response){
-//     $scope.allPlayers = response;//all players
-    // $scope.allPlayers.map(function(key){//to display for hall of fame like feature
-    //   return document.getElementById('highscore').insertAdjacentHTML("beforeend", "<div class='box'>" + key.html);
-    //})
-//   });
-// };
-
-
-// $scope.addPlayer = function(idString){//idString comes from cookie generator
-// mainServ.addPlayer(idString)
-// .then(function(response){
-//   $scope.getPlayers();
-// });
-// };
-
-// //GENERATE ID COOKIEe
-
-// function guid() {
-//   function s4() {
-//     return Math.floor((1 + Math.random()) * 0x10000)
-//       .toString(16)
-//       .slice(1);
-//   }
-//   return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-//     s4() + '-' + s4() + s4() + s4();
-// }
-
-//idString = return... (only return 8 characters)
-
-//     $scope.playerGenerator =
-//     function(){
-//       return {
-//       // get player name input(case sensitive) +
-//       // get ip from API +
-//       // get idString
-//       //nest cookie here or nest function in player=""?
-//       // if username exists on device - ask for new username
-//       // if username exists on ip - append new ID
-//       //}
-//     }
-//
-// //player cookie
-// document.cookie = "player=(insert ID generator function here)"; expires= Wed, 01 Jan 2020 00:00:00 GMT;
-// // path will default to where you are
-//
-//
-// //show cookies
-// document.getElementById("player1").textContent =  document.cookie;
-//
 
   });
