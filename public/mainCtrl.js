@@ -430,17 +430,13 @@ $scope.question =
         'margin-top': '0px'
       }, "slow");
     }
-
-        console.log("waah");
-
-
-
         $('.questionBox').html("Click on the state of " + state);
         $('.points').html('Score: ' + score);
         score++;
       };
-
-      state = $scope.states[Math.floor(Math.random()*48)].name;
+      stateObj = $scope.states[Math.floor(Math.random()*48)];
+      state = stateObj.name;
+  setState();
       $('.questionBox').html("Click on the state of " + state);
       $('polygon, path').off().on('click', function(e){
         if(e.target.id == state){
@@ -521,6 +517,7 @@ $scope.playGame1 =
                   $('.answerWrapper').show();
                   $scope.countdown();
                   $scope.question();
+
                 }
               )})
             }
@@ -591,7 +588,6 @@ $scope.deletePlayer = function(playerObj){
     $scope.getPlayers();
   });
 };
-
 
 
   });
