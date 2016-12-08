@@ -412,8 +412,8 @@ $scope.question =
               for (var i = 0; i < 6; i++ ) {
                   color += letters[Math.floor(Math.random() * 16)];
               }
-              $('#canvas').show();
-              $(e.currentTarget).css('fill', color);
+            //   $('#canvas').show();
+              $(e.currentTarget).css('fill', 'white');
               setState();
             } else if (state == 'Michigan' && e.target.id == 'Michigan'){
               alert('Hi');
