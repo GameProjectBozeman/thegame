@@ -391,6 +391,39 @@ $scope.question =
       });
     };
 
+    $scope.question2 =
+      function (){
+          var state = "";
+          score = 1;
+          function setState(){
+            state = $scope.states[Math.floor(Math.random()*48)].name;
+            $('.questionBox').html("Click on the state of " + state);
+            $('.points').html('Score: ' + score);
+            score++;
+            noRepeat();
+          };
+          state = $scope.states[Math.floor(Math.random()*48)].name;
+          $('.questionBox').html("Click on the state of " + state);
+          $('polygon, path').off().on('click', function(e){
+            if(e.target.id == state){
+              $('.answerWrapper').html(e.target.id);
+              var letters = '0123456789ABCDEF';
+              var color = '#';
+              for (var i = 0; i < 6; i++ ) {
+                  color += letters[Math.floor(Math.random() * 16)];
+              }
+              $('#canvas').show();
+              $(e.currentTarget).css('fill', color);
+              setState();
+            } else if (state == 'Michigan' && e.target.id == 'Michigan'){
+              alert('Hi');
+            } else {
+              $('#canvas').hide();
+              $('.answerWrapper').html(e.target.id);
+            };
+          });
+        };
+
 $scope.countdown =
   function(){
   setTimeout(function (){
@@ -457,6 +490,38 @@ $scope.playGame1 =
         })
       });
     };
+
+    $scope.playGame2 =
+      function(){
+        $('.instructions').fadeOut();
+        $('.mainMenuBtn').fadeOut();
+        $('.ready').delay(350).fadeIn(
+          function(){$('.ready').delay(350).fadeOut(
+            function(){
+              $('.set').fadeIn(function(){$('.set').delay(350).fadeOut(
+                function(){
+                  $('.go').fadeIn(function(){$('.go').delay(350).fadeOut(
+                    function(){
+                      $('.ready').css("visibility", "hidden");
+                      $('.set').css("visibility", "hidden");
+                      $('.go').css("visibility", "hidden");
+                      $('.wrapper').delay(200).fadeIn();
+                      $('.usmock1').delay(200).fadeIn();
+                      $('.seconds').show();
+                      $('.time').hide();
+                      $('#replay').hide();
+                      $('.questionBox').show();
+                      $('.answerWrapper').show();
+                    //   $scope.countdown();
+                      $scope.question2();
+                    }
+                  )})
+                }
+              )})
+            })
+          });
+        };
+
 
 $scope.replayGame1 =
   function(){
