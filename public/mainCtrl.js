@@ -350,7 +350,7 @@ $scope.states = [{
 $scope.question =
   function(){
       var state = "";
-      score = 0;
+      score = 1;
       function setState(){
         state = $scope.states[Math.floor(Math.random()*48)].name;
         $('.questionBox').html("Click on the state of " + state);
@@ -361,6 +361,8 @@ $scope.question =
       $('.questionBox').html("Click on the state of " + state);
       $('polygon, path').off().on('click', function(e){
         console.log(e.target.id);
+        $(e.currentTarget).css({
+          'transform': 'scale(1.3)'});
         if(e.target.id == state){
           console.log('Correct!');
           setState();
