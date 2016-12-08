@@ -395,13 +395,13 @@ $scope.question =
       function (){
           var state = "";
           score = 1;
-          function setState(){
-            state = $scope.states[Math.floor(Math.random()*48)].name;
-            $('.questionBox').html("Click on the state of " + state);
-            $('.points').html('Score: ' + score);
-            score++;
-            noRepeat();
-          };
+        //   function setState(){
+        //     state = $scope.states[Math.floor(Math.random()*48)].name;
+        //     $('.questionBox').html("Click on the state of " + state);
+        //     $('.points').html('Score: ' + score);
+        //     score++;
+        //     noRepeat();
+        //   };
           state = $scope.states[Math.floor(Math.random()*48)].name;
           $('.questionBox').html("Click on the state of " + state);
           $('polygon, path').off().on('click', function(e){
