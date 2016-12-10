@@ -1,6 +1,6 @@
     body {
         color: #3c3b3b;
-        background-color: gray;
+        background-color: whitesmoke;
         background-size: cover;
         margin: 0 auto;
         padding: 0px;
@@ -19,14 +19,14 @@
         cursor: crosshair;
     }
     .logo {
-        background: url('http://vignette2.wikia.nocookie.net/angrybirds/images/e/e0/Angry-Birds-Logo.png/revision/latest?cb=20120603010222') no-repeat center;
-        background-size: contain;
-        height: 31vh;
-        width: auto;
-        margin: 0 auto;
-        position: relative;
-        z-index: 9999;
-        margin-top: -14px;
+      background: url(assets/logomck.png) no-repeat center;
+      background-size: contain;
+      height: 36vh;
+      width: auto;
+      margin: 0 auto;
+      position: relative;
+      z-index: 9999;
+      margin-top: -18px;
     }
     .nav {
         height: 45px;
@@ -58,8 +58,18 @@
         justify-content: center;
         padding: 0 15px;
     }
+    #homeIcon1 {
+        position: absolute;
+        top: 20px;
+        right: 32px;
+    }
+    #homeIcon2 {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+    }
     .mainMenuBtn {
-        background: rgba(0, 0, 0, .3);
+        background: rgba(0, 0, 0, .4);
         width: max-content;
         height: max-content;
         padding: 10px;
@@ -68,26 +78,39 @@
         clear: both;
     }
     .mainMenuBtn2 {
-        background: rgba(0, 0, 0, .3);
+        /*background: rgba(0, 0, 0, .3);*/
         width: max-content;
         height: max-content;
-        padding: 10px;
-        box-shadow: 4px 4px 100px #ccc;
+        padding: 7px;
+        /*box-shadow: 4px 4px 100px #ccc;*/
         float: left;
         clear: both;
         margin: 0 auto;
         position: absolute;
-        bottom: 20px;
-        margin-left: 20px;
+        bottom: 18px;
+        margin-left: 25px;
     }
-    .mainMenuBtn a, .mainMenuBtn2 a {
-        color: white;
+    .mainMenuBtn3 {
+        /*background: rgba(0, 0, 0, .3);*/
+        width: max-content;
+        height: max-content;
+        padding: 10px;
+        float: left;
+        clear: both;
+        position: absolute;
+        bottom: 12px;
+        left: 13px;
+    }
+    .mainMenuBtn a, #homeIcon1 a, #homeIcon2 a {
+        color: #F1EEE5;
         text-decoration: none;
         text-transform: uppercase;
     }
-    #menuAnimate {}
+    #homeIcon1 a, #homeIcon2 a {
+        font-size: 29px;
+    }
     .homepage {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('assets/bkd.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -98,12 +121,12 @@
         text-transform: uppercase;
         margin: 0;
         margin-bottom: -25px;
-        font-size: 36px;
+        font-size: 32px;
         font-family: 'Bangers';
         letter-spacing: 3px;
     }
     .games {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('assets/bkd.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -112,7 +135,7 @@
         align-items: center;
     }
     .learn {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('assets/sbbk.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -121,7 +144,7 @@
         align-items: center;
     }
     .players {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('assets/sbbk.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -145,7 +168,7 @@
         z-index: 99999;
     }
     .game1Wrapper {
-        background: url('http://www.hdwallpapers.in/walls/firewatch_game-HD.jpg') center no-repeat;
+        background: url('assets/sbbk.png') center no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -187,33 +210,46 @@
         width: 110px;
         height: 110px;
         border-radius: 10px;
-        border: 1px solid white;
-        background: url('https://s-media-cache-ak0.pinimg.com/564x/f8/89/8e/f8898e79f66ec9545847915a2b306594.jpg') center no-repeat;
+        border: 2px solid #ffb30f;
+        background: url('assets/g1thmb.png') center no-repeat;
         background-size: cover;
+        position: relative;
+    }
+
+    #game1title {
+        position: absolute;
+        right: 10px;
+        bottom: -9px;
+        color: white;
+        font-size: 14px;
+        line-height: 1;
     }
     .game2 {
         width: 110px;
         height: 110px;
         border-radius: 10px;
-        border: 1px solid white;
-        background: url('http://images.pocketgamer.co.uk/FCKEditorFiles//besticons-2012-bad.jpg') center no-repeat;
+        border: 2px solid #ffb30f;
+        background: url('assets/ggbridge.jpeg') center no-repeat;
         background-size: cover;
     }
     .game3 {
         width: 110px;
         height: 110px;
         border-radius: 10px;
-        border: 1px solid white;
-        background: url('http://cdn.appstorm.net/iphone.appstorm.net/authors/marius/CutRopeTimeIcon.png') center no-repeat;
+        border: 2px solid #ffb30f;
+        background: url('assets/capitolbldng.jpeg') center no-repeat;
         background-size: cover;
     }
     .game4 {
         width: 110px;
         height: 110px;
         border-radius: 10px;
-        border: 1px solid white;
-        background: url('https://s-media-cache-ak0.pinimg.com/236x/bc/8c/00/bc8c007b984fb3b8e12b9962827872f9.jpg') center no-repeat;
+        border: 2px solid #ffb30f;
+        background: url('assets/nf.jpeg') center no-repeat;
         background-size: cover;
+    }
+    .game1:hover, .game2:hover, .game3:hover, .game4:hover {
+        box-shadow: 4px 20px 200px #46A5D4;
     }
     .gameLock1 {
         width: 100%;
@@ -223,21 +259,7 @@
         text-align: center;
         display: none;
     }
-    .gameLock2 {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.65);
-        text-align: center;
-    }
-    .gameLock3 {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.65);
-        text-align: center;
-    }
-    .gameLock4 {
+    .gameLock2, .gameLock3, .gameLock4 {
         width: 100%;
         height: 100%;
         border-radius: 10px;
@@ -259,29 +281,36 @@
         line-height: 1;
         width: 100%;
     }
+    .mainSvg {
+        margin-top: 4px;
+    }
     .main-wrapper {
-        width: 100%;
-        height: auto;
-        min-height: 73vh;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
-        margin-top: 175px;
-        padding: 40px;
+      width: 100%;
+      height: auto;
+      min-height: 73vh;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 30%;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .phone {
+      position: absolute;
+      z-index: 9999999;
+      left: -94px;
+      top: -139px;
+      width: 134%;
+      pointer-events: none;
     }
     .screen1 {
-        background-color: whitesmoke;
-        width: 640px;
-        height: 310px;
-        margin: 0;
-        overflow: hidden;
-    }
-    .screen2 {
-        background-color: whitesmoke;
-        width: 310px;
-        height: 640px;
-        margin: 0;
-        overflow: hidden;
+      background-color: whitesmoke;
+      width: 699px;
+      height: 358px;
+      margin: 0;
+      overflow: hidden;
     }
     .page-wrapper {
         display: flex;
@@ -291,16 +320,6 @@
         width: 100%;
         padding: 0 10px;
         margin-top: 75px;
-    }
-    .fa-home {
-        margin-left: 6px;
-        margin-top: -10px;
-        font-size: 26px;
-        color: #CEE9F2;
-        background: rgba(15, 27, 69, .2);
-        border-radius: 3px;
-        padding: 2px;
-        height: max-content;
     }
     #landingHomeIcon {
         position: absolute;
@@ -312,15 +331,13 @@
     .instructions {
         display: flex;
         background-size: cover;
-        border-radius: 5px;
         position: relative;
         overflow: hidden;
-        margin-bottom: -10px;
+        height: 98%;
     }
     .wrapper {
-        background: rgba(255, 255, 255, .85);
+        background: rgba(0, 0, 0, .24);
         background-size: cover;
-        border-radius: 5px;
         position: relative;
         overflow: hidden;
         width: 100%;
@@ -339,8 +356,8 @@
     }
     .landingModal {
         background: rgba(15, 40, 69, 0.65);
-        padding: 18px;
-        margin: 12px;
+        padding: 40px;
+        margin: 10px 12px;
         color: white;
         text-transform: uppercase;
         text-align: center;
@@ -355,6 +372,7 @@
         border: none;
         color: white;
         background-color: rgba(0, 255, 0, .6);
+        box-shadow: 4px 20px 100px #ccc;
         text-transform: uppercase;
         height: 30px;
         padding: 5px 10px;
@@ -362,41 +380,91 @@
         float: left;
         clear: both;
     }
-    .landingModal h3, .landingModal h4 {
+    .landingModal h3 {
         float: left;
         width: 100%;
     }
-    .usmock1 {
-        width: 80%;
-        height: auto;
-        position: relative;
-        margin-top: -38px;
-        margin-left: -18px;
+    #goal {
+        font-weight: bold;
+        font-family: 'Boogaloo', cursive;
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    #replay {
+        border: none;
+        color: white;
+        background-color: #437F97;
+        /*box-shadow: 4px 20px 100px #ccc;*/
+        text-transform: uppercase;
+        height: max-content;
+        padding: 10px;
+        font-size: 14px;
+        float: left;
+        margin-left: 25px;
         display: none;
     }
-    .sidebar {
-        background: rgb(40, 98, 127);
+    #canvas {
         position: absolute;
+        top: 20px;
+        left: 0;
         right: 0;
-        top: 0;
-        height: 100%;
-        width: 23%;
-        padding: 6px;
-        text-align: center;
+        margin: auto;
+        width: 640px;
+        height: 310px;
+        pointer-events: none;
+        opacity: 0.5;
+        display: none;
+    }
+    .usMainWrapper {
+      width: 80%;
+      height: auto;
+      position: relative;
+      margin-top: -42px;
+      margin-left: -15px;
+      display: none;
+    }
+    #akWrapper {
+      position: absolute;
+      bottom: 0;
+      left: -42px;
+      z-index: 99;
+      width: 25%;
+      height: 28%;
+    }
+    #hiWrapper {
+      position: relative;
+      bottom: 215px;
+      left: -29px;
+      z-index: 98;
+      width: 33%;
+      height: 28%;
+    }
+    #layer_1 {
+      margin-left: 5px;
+    }
+    .sidebar {
+      background: #FFB30F;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 23%;
+      padding: 6px;
+      text-align: center;
     }
     .questionBox {
-        width: 100%;
-        height: max-content;
-        background: rgba(15, 27, 69, .25);
-        border-radius: 5px;
-        box-sizing: border-box;
-        border: 5px solid white;
-        box-shadow: 5px 5px 20px #fff;
-        padding: 18px 14px;
-        color: white;
-        text-transform: uppercase;
-        font-size: 15px;
-        text-align: center;
+      width: 100%;
+      height: max-content;
+      background: rgba(23, 134, 191, 0.84);
+      border-radius: 5px;
+      box-sizing: border-box;
+      border: 4px solid white;
+      padding: 18px 3px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 15px;
+      text-align: center;
+      margin-top: 5px;
     }
     .questionBox select {
         margin-top: 5px;
@@ -405,10 +473,11 @@
         width: 100%;
         height: max-content;
         box-sizing: border-box;
-        background: rgba(15, 27, 69, .25);
+        font-size: 25px;
+        background: rgba(17, 44, 51, 0.67);
         border-radius: 5px;
-        border: 5px solid white;
-        box-shadow: 4px 4px 20px #fff;
+        border: 4px solid white;
+        /*box-shadow: 4px 4px 45px #fff;*/
         padding: 5px;
         font-family: 'Orbitron', sans-serif;
         color: lime;
@@ -418,21 +487,32 @@
     .scoreWrapper {
         padding: 23px;
     }
+    .answerWrapper {
+        padding: 23px;
+        width: 80%;
+        height: max-content;
+        padding: 18px 14px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+    }
     .points {
-        width: auto;
+        width: 80%;
         height: 20px;
-        padding-left: 11px;
+        padding: 15px 0 10px 16px;
         float: left;
-        font-size: 16px;
+        font-size: 15px;
         font-family: 'Happy Monkey', cursive;
         color: white;
         text-transform: uppercase;
         text-align: center;
     }
-    .time {
+    .gameOverMsg {
         display: none;
+        background: rgba(23, 134, 191, 0.84);
         width: auto;
-        padding: 5px;
+        padding: 10px;
         float: left;
         font-size: 13px;
         font-family: 'Happy Monkey', cursive;
@@ -440,8 +520,8 @@
         text-transform: uppercase;
         text-align: center;
         border: 2px solid white;
-        margin-bottom: 20px;
-      }
+        margin: 75px 10px 20px 10px;
+    }
     .pin {
         background: url(https://cdn.goconqr.com/uploads/image_clipping/image/75550/flag_pin_angled_400_clr_9655.png) center no-repeat;
         background-size: cover;
@@ -457,66 +537,74 @@
     }
     /*SVG w hover*/
 
+    polygon, path {
+        stroke: rgba(14, 128, 147, 1) !important;
+        stroke-width: .12 !important;
+    }
     .territory-west:hover {
-        fill: #B1DBA6;
+        fill: #B1DBA6 !important;
     }
     .territory-northeast:hover {
-        fill: #79909B;
+        fill: #79909B !important;
+    }
+    g.michigan:hover polygon {
+        fill: #79909B !important;
+    }
+    g.maryland:hover path {
+        fill: #79909B !important;
     }
     .territory-ksmo:hover {
-        fill: #F7CC7E;
+        fill: #F7CC7E !important;
     }
     .territory-southeast:hover {
-        fill: #EFA497;
+        fill: #EFA497 !important;
     }
-    /*alternative to media queries*/
-
-    .screen2 .sidebar {
-        background: rgb(40, 98, 127);
-        position: relative;
-        right: 0;
-        top: 0;
-        height: 57%;
-        width: 96%;
-        padding: 6px;
-        text-align: center;
+    .playerWrapper {
+        margin: auto;
+        display: flex;
+        align-content: space-around;
     }
-    .screen2 .usmock1 {
-        width: 109%;
-        margin-bottom: -70px;
-        margin-left: -17px;
-        margin-top: -5px;
-    }
-    .screen2 .timer {
-        width: 100%;
-        height: 50px;
-        box-sizing: border-box;
-        background: rgba(15, 27, 69, .25);
-        border-radius: 5px;
-        border: 5px solid white;
-        box-shadow: 4px 4px 20px #fff;
-        padding: 5px;
-        font-family: 'Orbitron', sans-serif;
-        color: lime;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    .screen2 .mainMenuBtn2 {
-        background: rgba(0, 0, 0, .3);
+    .playercard {
         width: max-content;
         height: max-content;
-        padding: 10px;
+        padding: 5px;
         box-shadow: 4px 4px 100px #ccc;
         float: left;
-        clear: both;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 20px;
-        margin-left: 100px;
+        margin-top: 93px;
     }
-    .screen2 .scoreWrapper {
-        padding: 30px 0 0 100px;
+    .playercard h3 {
+        width: 100%;
     }
-    .screen2 #newState {
-        padding: 3px 22px;
+    .playercard img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    #go {
+      width: 100%;
+    }
+    #player1 {
+        background: rgba(200, 0, 0, .3);
+    }
+    #player2 {
+        background: rgba(0, 170, 0, .3);
+    }
+    #player3 {
+        background: rgba(0, 0, 170, .3);
+    }
+    #player4 {
+        background: rgba(170, 170, 0, .3);
+    }
+    #player5 {
+        background: rgba(0, 170, 170, .3);
+    }
+    .flexIcon {
+        text-decoration: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    li {
+        text-decoration: none;
     }
