@@ -1,0 +1,13 @@
+<div class="learn">
+    <img src="assets/PixelPhone3.png" class="phone" />
+
+     <div class="viewWrapper">
+       <div class="playercard" id="player1">
+         <form class="" action="index.html" method="post">
+           <input ng-model="onePlayer.name" ng-bind="{{onePlayer.name}}" />
+           <a type="button" name="button" ng-click="changePlayer(onePlayer)" ui-sref="createAvatar({createAvatarId: player._id})">Choose Avatar!</a>
+           <img ng-src="{{onePlayer.avatar}}" />
+         </form>
+     </div>
+    </div>
+    </div>

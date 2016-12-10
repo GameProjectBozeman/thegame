@@ -1,68 +1,12 @@
 <div class="players">
-  <div class="viewWrapper">
-
-    <div class="playerWrapper">
-      <div ng-model="playerObj"
-    class="playercard" id="player1"><img src="/assets/panda2.jpg"/>{playerObj.name[0]}</div>
-
-      <div class="playercard" id="player2"><img src="/assets/bunny2.jpg"/>Player 2</div>
-      <div class="playercard" id="player3"><img src="/assets/cat2.jpeg"/>Player 3</div>
-      <div class="playercard" id="player4"><img src="/assets/dog2.png"/>Player 4</div>
-      <div class="playercard" id="player5"><img src="/assets/skunk2.jpg"/>Player 5</div>
-      <div class="playercard" id="player6"><img src="/assets/skunk2.jpg"/>Player 5</div>
-    </div>
-    <div class="mainMenuBtn">
-      <a ui-sref="home">Main Menu</a>
-    </div>
-  </div>
+  <img src="assets/PixelPhone3.png" class="phone"/>
+ <div class="viewWrapper">
+   <div  class="playerWrapper1" ng-repeat="player in allPlayers| filter: filterer" >
+     <a ng-click="getPlayer(player._id)" ui-sref="createPlayer({createPlayerId: player._id})">
+     <div class="playercard" id="player1">
+       <img id="avatar" ng-src="{{player.avatar}}"/>{{player.name}}</a>
+       <button type="button" name="button" ng-model="getPlayers()">Get Players</button>
+     </div>
+   </div>
+ </div>
 </div>
-
-
-
-
-
-<!-- <div ng-init="getPlayers()" ng-model="playerObj" class="playercard" id="player1">
-  <span ng-hide="focused" ng-click="focused=true">
-  <img src="http://www.atelier-eme.it/wp-content/uploads/2016/03/avatar-default.png"/>{{playerObj[0].name}}
-</span> -->
-<!-- here's where the form goes -->
-
-
-<!-- <form ng-submit="changePlayer(playerObj[0])">
-<h2 ng-show="focused" ng-click="focused=true">what's your name?</h2>
-<input ng-show="focused" ng-click="focused=true" type="text" placeholder="name" ng-model="playerObj[0].name">
-<h2 ng-show="focused" ng-click="focused=true">avatar?</h2>
-<div ng-show="focused" ng-click="focused=true" type="text" placeholder="avatar" id="avatar" ng-model="playerObj[0].avatar" class="flexIcon">
-  <div ng-click="changePlayer(playerObj.avatar)">
-    <a href="#" ng-model="playerObj[0].avatar"><img src="/assets/BBuns.png" alt="" id="thumb"></a>
-  </div>
-  <div ng-click="changePlayer(playerObj.avatar)">
-    <a href="#" ng-model="playerObj[0].avatar"><img src="/assets/BBison.png" alt="" id="thumb"></a>
-  </div>
-  <div ng-click="changePlayer(playerObj.avatar)">
-    <a href="#" ng-model="playerObj[0].avatar"><img src="/assets/Dog.png" alt="" id="thumb"></a>
-  </div>
-  <div ng-click="changePlayer(playerObj.avatar)">
-    <a href="#" ng-model="playerObj[0].avatar"><img src="/assets/BBear.png" alt="" id="thumb"></a>
-  </div>
-  <div ng-click="changePlayer(playerObj.avatar)">
-    <a href="#" ng-model="playerObj[0].avatar"><img src="/assets/Doe.png" alt="" id="thumb"></a>
-  </div>
-  <div ng-click="changePlayer(playerObj.avatar)">
-    <a href="#" ng-model="playerObj[0].avatar"><img src="/assets/Cat.png" alt="" id="thumb"></a>
-  </div>
-</div>
-<button ng-show="focused" ng-submit="focused=true" type="submit" name="login">play!</button> -->
-<!-- <button type="button" ng-click="deletePlayer(playerObj)">X</button> -->
-<!-- </form> -->
-
-<!-- FORM DOESNT CHANGE, POSTMAN DOES -->
-<!-- done -->
-<!-- </div>
-
-<div ng-model="playerObj" class="playercard" id="player2"><img ng-src="{{playerObj[1].avatar}}"/>{{playerObj[1].name}}</div>
-<div ng-model="playerObj" class="playercard" id="player3"><img ng-src="{{playerObj[2].avatar}}"/>{{playerObj[2].name}}</div>
-<div ng-model="playerObj" class="playercard" id="player4"><img ng-src="{{playerObj[3].avatar}}"/>{{playerObj[3].name}}</div>
-<div ng-model="playerObj" class="playercard" id="player5"><img ng-src="{{playerObj[4].avatar}}"/>{{playerObj[4].name}}</div>
-<div ng-model="playerObj" class="playercard" id="player6"><img ng-src="{{playerObj[5].avatar}}"/>{{playerObj[5].name}}</div>
-              </div> -->

@@ -6,9 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Butcherman|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link rel="stylesheet" href="kevin.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://www.koponairdo.com/wp-content/uploads/2012/04/united-states-map.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="assets/logo.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <base href="/">
@@ -22,18 +24,21 @@
           </div>
 
           </br>
-          <!-- <div class="screen2">
-                <ui-view></ui-view>
-          </div> -->
     </div>
 
     <canvas id="canvas"></canvas>
+    <div id="canvasDiv"></div>
+      <script type="text/javascript" src="blinkCtrl.js"></script>
+      <script type="text/javascript">
+         prepareCanvas(document.getElementById("canvasDiv"), 699, 358);
+      </script>
 
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="mainCtrl.js"></script>
+    <script type="text/javascript" src="blinkCtrl.js"></script>
     <script type="text/javascript" src="mainServ.js"></script>
     <script src="animationsCtrl.js"></script>
 </body>

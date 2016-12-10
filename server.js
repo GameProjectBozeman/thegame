@@ -27,6 +27,6 @@ mongoose.connection.once('open', function(){
 });
 
 //lets try mLab to host
-app.listen(7000, function(){
-  console.log("seeking the meaning of life on port 7000");
+app.listen(4400, function(){
+  console.log("seeking the meaning of life on port 4400");
 });
