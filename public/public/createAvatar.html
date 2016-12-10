@@ -1,0 +1,51 @@
+<div class="avatar">
+      <img src="assets/PixelPhone3.png" class="phone" />
+    <div class="viewWrapper2">
+
+        <form class="playerWrapper2" action="index.html" method="post">
+
+            <select ng-click="changePlayer(onePlayer)" ng-model="onePlayer.avatar">
+                <option value="http://www.atelier-eme.it/wp-content/uploads/2016/03/avatar-default.png">
+                    Default
+                </option>
+                <option id="box" value="/assets/BBuns.png">
+                    Big Buns
+                </option>
+                <option id="box" value="/assets/BBison.png">
+                    Billy the Bison
+                </option>
+                <option id="box" value="/assets/Dog.png">
+                    Daisy Dog
+                </option>
+                <option id="box" value="/assets/BBear.png">
+                    Brutus the Bear
+                </option>
+                <option id="box" value="/assets/Doe.png">
+                    Dainty Doe
+                </option>
+                <option id="box" value="/assets/Cat.png">
+                    Cool Cat
+                </option>
+            </select>
+
+            <div class="playercard">
+
+                <img src="/assets/BBuns.png" />
+
+                <img src="/assets/BBison.png" />
+
+                <img src="/assets/Dog.png" />
+
+                <img src="/assets/BBear.png" />
+
+                <img src="/assets/Doe.png" />
+
+                <img src="/assets/Cat.png" />
+            </div>
+            <div class="playercard" id="player1">
+                <a type="button" name="button" ng-click="changePlayer(onePlayer)" ui-sref="game1({game1Id: player._id})">Play, {{onePlayer.name}}!</a>
+                <img ng-model="onePlayer.avatar" ng-src="{{onePlayer.avatar}}" />
+            </div>
+        </form>
+    </div>
+</div>
